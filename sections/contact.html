@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body class="body">
+    <header>
+        <nav id="header">
+            <div>
+                <a href=""><img class="logo" src="../images/logo.png" alt="logo"  class="img-fluid" width="100px"></a>
+            </div>
+            <ul class="nav-bar">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="./about.html">About</a></li>
+                <li class="nav-item"><a href="./services.html">Services</a></li>
+                <li class="nav-item"><a href="./products.html">Products</a></li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>        
+    </header> 
+    
+    <main>
+        <h1 class="title">Tell us about you!</h1>
+        <form action="" class="contact">
+            <fieldset class="contact-box">
+                <legend>GET IN TOUCH</legend>
+                <div>
+                    <label for="name">What is your name?</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                
+                <div>
+                    <label for="location">Where are you from?</label>
+                    <select for="location" id="location">
+                        <option value="">Uruguay</option>
+                        <option value="">Argentina</option>
+                        <option value="">Spain</option>
+                        <option value="">Other</option> 
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="date">Birth Date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                
+                <div>
+                    <label for="email">Email Adress</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <div>
+                    <label for="comments">Leave us your comment</label> <br>
+                    <textarea name="Comment" id="Comment" cols="80" rows="10" placeholder="Tell us how can we improve"></textarea>
+                </div>
+                
+                <div>
+                    <button class="submit">SUBMIT</button><br>
+                </div>
+            </fieldset>
+        </form>
+    </main> 
+
+    <footer class="footer">
+        <div>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/icons8-instagram.svg" alt="icono-instagram"></a> <!-- pongo target blank para que al abrir el link no se pierda la página en la que estoy-->
+            <a href="https://www.facebook.com/" target="_blank"><img src="../images/icons8-facebook-nuevo.svg" alt="icono-facebook"></a>
+        </div>
+        <div><a href="#header">Back to the start</a>
+        </div>
+    </footer>
+    <br>
+</body>
+</html>

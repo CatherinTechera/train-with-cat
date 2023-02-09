@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant&display=swap');
+
+* {
+    font-family: 'Cormorant', serif;
+}
+
+html {
+    height: 1000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    height: auto;
+}
+
+#header {
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    width: auto;
+    height: 20px;
+    padding: 20px;
+    word-spacing: 25px; 
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    color: blueviolet;
+}
+
+.nav-bar, .nav-item {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: #76D7C4;
+    font-size: 28px;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 100px;
+    margin: 50px 30px 30px 30px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color:#76D7C4;
+    margin-bottom: 7px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.title, .subtitle {
+    display: flex;
+    align-self: flex-start;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.title {
+    font-size: 38px;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.subtitle {
+    font-size: 30px ;
+} 
+
+.p-home {
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.card-home {
+    display: inline-flex;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 300px;
+    height: 260px;
+    padding: 10px;
+    border-radius: 30px;
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.card-home:hover {
+    width: 320px;
+    height: 280px;
+}
+
+.card-img {
+    border-radius: 30px;
+}
+
+.footer {
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: cover; 
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: auto;    
+}
+
+.main-about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card-body-about {
+    display: flex;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1060px;
+    height: 590px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-text-about {
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px;
+    width: 600px;
+}
+
+.about-image {
+    width: 425px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.services {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    padding: 20px;
+    background: #add8e6;
+    border: white;
+    outline: black;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 40px;
+}
+
+.services:hover {
+    background-color: #76D7C4;
+}
+
+.card-body {
+    display: inline-flex;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 250px;
+    height: 650px;
+    padding: 10px;
+    border-radius: 30px;
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    transition: width, height, 1s;
+}
+
+.card-img-top {
+    width: 250px;
+    border-radius: 30px;
+}
+
+.card-title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px;
+}
+
+.products-cards {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 320px 320px 320px;
+    grid-template-rows: 320px 270px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.products {
+    display: grid;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 270px;
+    height: 245px;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-img-prod {
+    width: 250px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+}
+
+.contact-box {
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 30px;
+    border-width: 2px;
+    margin: 20px;
+}
+
+input, textarea {
+    background-color: transparent;
+}
+
+.submit {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    padding: 20px;
+    background: lightblue;
+    border: white;
+    outline: black;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 40px;
+}
+
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 30px;
+        margin: 10px;
+        padding-left: 20px;
+    }
+    .subtitle {
+        margin: 10px;
+        padding-left: 20px;
+    }
+    .body {
+        background-image: none;
+        background-size: auto;
+        background-color: #F2F3F4;
+    }
+    #header {
+        font-size: 20px;
+        flex-direction: column;
+        background-color: transparent;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-bar {
+        padding: 10px;
+        text-align: center;
+    }
+    .nav-bar, .nav-item {
+        display: block;
+        border-bottom: 1px solid rgba(165,209,212,255);
+        display: none;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 15px; 
+    }
+    .logo {
+        align-items: center;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card-home {
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    .card-body-about {
+        flex-direction: column-reverse;
+        height: 900px;
+        width: 320px;
+    }
+    .card-img-top {
+        width: 270px;
+    }
+    .card-text-about {
+        width: 300px;
+    }
+    .about-image {
+        width: 300px;
+        padding: 20px;
+        margin-top: 40px;
+    }
+    .services {
+        margin-bottom: 60px;
+        padding: 20px;
+        display: flex;
+    }
+    .products-cards, .products {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+    .products{
+        width: 280px;
+        margin: 10px;
+    }
+    .card-title {
+        padding-top: 40px;
+    }
+    .contact {
+        font-family: 'Cormorant', serif;
+        font-size: 10px;
+    }
+    .contact-box {
+        width: 320px;
+        background-color: whitesmoke; 
+    }
+    textarea {
+        width: 300px;
+    }
+}
