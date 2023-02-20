@@ -36,16 +36,19 @@
     border-radius: 100px;
     margin: 0;
     display: inline-block;
-    animation: logo-animation linear forwards 5s;
+    animation: logo-animation 3s linear forwards infinite;
 }
 
 .logo:hover {
     animation-play-state: paused;
 }
 
-@keyframes logo-animation {
+@keyframes logo-animation  {
     0% {
-        transform: rotate(360deg);
+        transform: translateX(0%);
+    }
+    33% {
+        transform: translateY(10%);
     }
 }
 
@@ -347,11 +350,15 @@ textarea {
         height: 300vh;
     }
 
+    .header.header {
+        height: 65px;
+    }
+
     .header li {
         float: left;
     }
     .header li a {
-        padding-left: 20px;
+        padding: 15px;
         font-size: 18px;
     }
     .header .menu {
@@ -478,7 +485,6 @@ textarea {
 @media (min-width: 768px){
     .header li a {
         font-size: 22px;
-        padding-left: 25px;
     }
 
     .card-img {
