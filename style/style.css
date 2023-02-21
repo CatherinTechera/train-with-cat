@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant&family=Quicksand&display=swap');
 * {
     font-family: 'Cormorant', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
 }
 
 .body {
@@ -11,8 +17,7 @@
 }
 
 .header {
-    background-color: whitesmoke;
-    box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+    background-color: transparent;
     position: absolute;
     width: 100%;
     z-index: 3;
@@ -36,6 +41,7 @@
     border-radius: 100px;
     margin: 0;
     display: inline-block;
+    box-shadow: 2px 2px 4px #2c346b;
     animation: logo-animation 3s linear forwards infinite;
 }
 
@@ -59,10 +65,12 @@
     text-decoration: none;
     justify-content: center;
     color: #2c346b;
+    font-weight: bold;
+    width: 170px;
 }
 
 .header li a:hover {
-    background-color: #D1F2EB;
+    background-color: #61a6ab;
     color: white;
     font-weight: bold;
 }
@@ -134,12 +142,12 @@ header .menu-btn {
     top: 0;
 }
 
-.main {
+.main, .main-products {
     display: flex;
     flex-direction: column;
 }
 
-.title, .subtitle, .p-home {
+.title, .subtitle, .title-home, .p-home {
     display: flex;
     padding-right: 30px;
     padding-left: 30px;
@@ -148,7 +156,40 @@ header .menu-btn {
 .title {
     font-size: 30px;
     background-color: transparent;
-    margin-top: 140px;
+    margin-top: 150px;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    margin-top: 120px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-home-text {
+    display: flex;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 2px 2px 4px #2c346b;
+    color: whitesmoke;
+    margin: 50px;
+    animation: title-animation 3s linear forwards infinite;
+}
+
+.title-home-text:hover {
+    animation-play-state: paused;
+}
+
+@keyframes title-animation  {
+    0% {
+        transform: translateX(0%);
+    }
+    33% {
+        transform: translateY(15%);
+    }
 }
 
 .subtitle {
@@ -156,8 +197,19 @@ header .menu-btn {
     margin: 10px;
 } 
 
+.img-fluid {
+    display: none;
+}
+
 .p-home {
-    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+.p {
+    font-size: 25px;
+    text-align: center;
 }
 
 .cards {
@@ -215,6 +267,7 @@ header .menu-btn {
     border-radius: 30px;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 4px #2c346b;
 }
 
 .card-text-about {
@@ -254,8 +307,10 @@ header .menu-btn {
     display: inline-flex;
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.5);
-    width: 300px;
-    height: 600px;
+    min-width: 280px;
+    max-width: 300px;
+    min-height: 600px;
+    max-height: 650px;
     padding: 10px;
     border-radius: 30px;
     justify-content: center;  
@@ -263,14 +318,15 @@ header .menu-btn {
     flex-direction: column;
     margin: 20px;
     transition: width, height, 1s;
+    box-shadow: 2px 2px 4px #2c346b;
 }
 
-.img-fluid {
+.img-services {
     width: 250px;
     border-radius: 30px;
 }
 
-.card-title, .card-title-services {
+.card-title, .card-title-home, .card-title-services {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
@@ -278,7 +334,7 @@ header .menu-btn {
 }
 
 .card-text {
-    font-size: 3vh;
+    font-size: 18px;
     text-align: justify;
     margin: 20px;
 }
@@ -294,6 +350,14 @@ header .menu-btn {
     margin: 20px;
     justify-items: center;
     align-content: center;
+    box-shadow: 2px 2px 4px #2c346b;
+}
+
+.img-fluid-products {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    width: 100%;
 }
 
 .row {
@@ -317,6 +381,7 @@ header .menu-btn {
     border-width: 2px;
     margin: 20px;
     padding: 20px;
+    box-shadow: 2px 2px 4px #2c346b;
 }
 
 input {
@@ -347,11 +412,17 @@ textarea {
 
 @media (min-width: 576px){
     .main {
+        height: 200vh;
+    }
+
+    .main-products {
         height: 300vh;
     }
 
     .header.header {
         height: 65px;
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 4px #2c346b;
     }
 
     .header li {
@@ -360,6 +431,7 @@ textarea {
     .header li a {
         padding: 15px;
         font-size: 18px;
+        width: 70px;
     }
     .header .menu {
         clear: none;
@@ -374,12 +446,34 @@ textarea {
         font-size: 38px;
     }
 
+    .title-home-text {
+        position: absolute;
+        font-size: 60px;
+        top: 25%;
+    }
+
     .subtitle {
         font-size: 30px;
     } 
 
-    .p-home {
+    .p {
         font-size: 20px;
+    }
+
+    .p-home {
+        background-color: rgba(255, 255, 255, 0.75);
+        position: absolute;
+        width: 100%;
+    }
+
+    .home {
+        position: relative;
+        margin-top: 0;
+    }
+
+    .img-fluid {
+        display: flex;
+        width: 100%;
     }
 
     .cards {
@@ -390,6 +484,7 @@ textarea {
     .card-home {
         width: 290px;
         height: 200px;
+        justify-content: end;
     }
 
     .card-img {
@@ -398,7 +493,7 @@ textarea {
     }
 
     .card-img:hover {
-        width: 232px 2s;
+        width: 232px;
     }
 
     .card-body-about {
@@ -433,17 +528,16 @@ textarea {
         height: 45px;
     }
 
-    .card-body {
-        width: 250px;
-        height: 580px;
-    }
-
     .card-img-top {
         width: 250px;
     }
 
-    .card-title, .card-title-services {
+    .card-title, .card-title-home, .card-title-services {
         margin-top: 20px;
+    }
+
+    .card-text {
+        font-size: 20px;
     }
 
     .col-lg-4:hover {
@@ -485,8 +579,21 @@ textarea {
 @media (min-width: 768px){
     .header li a {
         font-size: 22px;
+        width: 90px;
     }
 
+    .title-home {
+        font-size: 70px;
+    }
+
+    .p {
+        font-size: 25px;
+    }
+
+    .p-home {
+        bottom: 10%
+    }
+  
     .card-img {
         width: 270px;
     }
@@ -497,7 +604,7 @@ textarea {
 
     .card-home {
         width: 300px;
-        height: 260px;
+        height: 230px;
     }
 
     .card-body-about, .card-text-about, .services, .card-body  {
@@ -527,5 +634,36 @@ textarea {
 
     .row {
         flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 1020px) {
+    .main-services {
+        height: 200vh;
+    }
+
+    .p-home {
+        bottom: 20%
+    }
+
+    .cards {
+        flex-wrap: nowrap;
+    }
+
+    .card-home {
+        width: 450px;
+        height: 310px;
+    }
+
+    .card-img {
+        width: 380px;
+    }
+
+    .card-img:hover {
+        width: 400px;
+    }
+
+    .card-title-home {
+        font-size: 30px;
     }
 }
