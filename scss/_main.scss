@@ -1,0 +1,24 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 576px){
+        .main {
+            height: 200vh;
+        }
+    }
+}
+
+.main-products, .main-services {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 576px){
+        .main-products, .main-services {
+            height: 300vh;
+        }
+    }
+    @media (min-width: 1020px) {
+        .main-products, .main-services {
+            height: 200vh;
+        }
+    }
+}

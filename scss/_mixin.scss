@@ -1,0 +1,9 @@
+@mixin boxes ($padding, $border, $justify, $align, $margin) {
+    padding: $padding;
+    border-radius: $border;
+    justify-content: $justify;
+    align-items: $align;
+    margin: $margin;
+}
+
+

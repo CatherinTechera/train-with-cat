@@ -1,0 +1,113 @@
+.main-services {
+    @extend .main-services;
+    .title {
+        @extend .title;
+    }
+    .cards-services {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        .card-body {
+            @include boxes (10px, 30px, center, center, 20px);
+            display: inline-flex;
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            min-width: 280px;
+            max-width: 300px;
+            min-height: 600px;
+            max-height: 650px;
+            flex-direction: column;
+            transition: width, height, 1s;
+            box-shadow: 2px 2px 4px #2c346b;
+            .card-title-services {
+                font-size: 20px;
+                text-align: center;
+                font-weight: bold;
+                margin-top: 15px;
+            }
+            .img-services {
+                width: 250px;
+                border-radius: 30px;
+            }
+            .card-text {
+                font-size: 18px;
+                text-align: justify;
+                margin: 20px;
+            }
+            .services {
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                justify-content: center;  
+                align-items: center;  
+                padding: 20px;
+                background: #add8e6;
+                border: white;
+                outline: black;
+                border-radius: 20px;
+                overflow: hidden;
+                cursor: pointer;
+                height: 40px;
+            }
+            .services:hover {
+                background-color: #61a6ab;
+                height: 45px;
+            }
+        }
+    }    
+}
+
+@media (min-width: 576px){
+    .main-services {
+        height: 300vh; 
+        .cards-services {
+            flex-direction: row;
+            flex-wrap: wrap;
+            .card-body {
+                .card-title-services {
+                    margin-top: 20px;
+                }
+                .card-img-top {
+                    width: 250px;
+                }
+                .card-text {
+                    font-size: 20px;
+                }
+                .services:hover, .submit:hover  {
+                    background-color: #61a6ab;
+                    height: 45px;
+                }
+            }
+            .card-body:hover {
+                animation: services-animation 3s linear forwards infinite;
+            }
+            @keyframes services-animation {
+                0% {
+                    transform: translateX(0);
+                    }
+                33% {
+                    transform: translateX(7%);
+                }
+            }
+        }
+    }     
+}
+
+@media (min-width: 768px){
+    .card-body {
+        height: 620px;
+        .services {
+            height: 40px;
+        }
+    }
+}
+
+@media (min-width: 1020px) {
+    .main-services {
+        height: 200vh;
+        .cards-services {
+            flex-wrap: nowrap;
+        }
+    }
+}

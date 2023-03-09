@@ -1,0 +1,155 @@
+.header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    word-spacing: 20px;
+    margin-top: 20px;
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin: 0;
+        display: inline-block;
+        box-shadow: 2px 2px 4px #2c346b;
+        animation: logo-animation 3s linear forwards infinite;
+    }
+    
+    .logo:hover {
+        animation-play-state: paused;
+    }
+    
+    @keyframes logo-animation  {
+        0% {
+            transform: translateX(0%);
+        }
+        33% {
+            transform: translateY(10%);
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: whitesmoke;
+    }
+    
+    li a {
+        display: flex;
+        padding: 8px;
+        border-right: 1px solid #f4f4f4;
+        text-decoration: none;
+        justify-content: center;
+        color: #2c346b;
+        font-weight: bold;
+        width: 170px;
+    }
+    
+    li a:hover {
+        background-color: #61a6ab;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    
+    .menu-icon {
+        cursor: pointer;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    
+    .menu-icon .navicon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+    
+    .menu-icon .navicon:before,
+    .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    
+    .menu-icon .navicon:before {
+        top: 5px;
+    }
+    
+    .menu-icon .navicon:after {
+        top: -5px;
+    }
+    
+    .menu-btn {
+        display: none;
+    }
+    
+    .menu-btn:checked ~ .menu {
+        max-height: 240px;
+    }
+    
+    .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+    
+    .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+    
+    .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+    
+    .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+}
+
+@media (min-width: 576px){
+    .header {
+        height: 65px;
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 4px #2c346b;
+    }
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 15px;
+        font-size: 18px;
+        width: 70px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .header li a {
+        font-size: 22px;
+        width: 90px;
+    }
+}
