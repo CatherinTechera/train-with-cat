@@ -21,7 +21,7 @@
   word-spacing: 20px;
   margin-top: 20px;
 }
-.header .logo {
+.header .logo-home {
   width: 100px;
   height: 100px;
   border-radius: 100px;
@@ -30,7 +30,7 @@
   box-shadow: 2px 2px 4px #2c346b;
   animation: logo-animation 3s linear forwards infinite;
 }
-.header .logo:hover {
+.header .logo-home:hover {
   animation-play-state: paused;
 }
 @keyframes logo-animation {
@@ -588,11 +588,6 @@ a {
   width: 260px;
   height: 210px;
   flex-direction: column;
-  /*padding: 10px;
-  border-radius: 30px;
-  justify-content: center;  
-  align-items: center;
-  margin: 20px;*/
 }
 .cards .card-home .card-title-home {
   font-size: 24px;
