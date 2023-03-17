@@ -1,3 +1,17 @@
+@mixin title {
+    font-size: 30px;
+    background-color: transparent;
+    margin-top: 150px;
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+    @media (min-width: 576px){
+        .title {
+            font-size: 38px;
+        }
+    }
+}
+
 @mixin boxes ($padding, $border, $justify, $align, $margin) {
     padding: $padding;
     border-radius: $border;

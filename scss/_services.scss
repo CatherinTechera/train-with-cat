@@ -1,7 +1,6 @@
 .main-services {
-    @extend .main-services;
     .title {
-        @extend .title;
+        @include title;
     }
     .cards-services {
         display: flex;

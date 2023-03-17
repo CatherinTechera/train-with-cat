@@ -3,6 +3,12 @@
   font-family: "Cormorant", serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
 .body {
   background-image: url(../images/water.jpeg);
   background-size: cover;
@@ -229,6 +235,20 @@
     bottom: 20%;
   }
 }
+.title {
+  font-size: 30px;
+  background-color: transparent;
+  margin-top: 150px;
+  display: flex;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (min-width: 576px) {
+  .title .title {
+    font-size: 38px;
+  }
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -284,6 +304,19 @@
   }
   .about .card-body-about .about-image {
     width: 425px;
+  }
+}
+.main-services .title {
+  font-size: 30px;
+  background-color: transparent;
+  margin-top: 150px;
+  display: flex;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (min-width: 576px) {
+  .main-services .title .title {
+    font-size: 38px;
   }
 }
 .main-services .cards-services {
@@ -393,6 +426,19 @@
     flex-wrap: nowrap;
   }
 }
+.main-products .title {
+  font-size: 30px;
+  background-color: transparent;
+  margin-top: 150px;
+  display: flex;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (min-width: 576px) {
+  .main-products .title .title {
+    font-size: 38px;
+  }
+}
 .main-products .container-fluid .row {
   align-items: center;
   justify-content: center;
@@ -450,6 +496,19 @@
 @media (min-width: 1020px) {
   .main-products {
     height: 200vh;
+  }
+}
+.main .title {
+  font-size: 30px;
+  background-color: transparent;
+  margin-top: 150px;
+  display: flex;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (min-width: 576px) {
+  .main .title .title {
+    font-size: 38px;
   }
 }
 .main .contact {
@@ -523,26 +582,6 @@
 .footer .socials-img {
   width: 100px;
   height: 100px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-.title, .main-services .title, .main-products .title, .main .title {
-  font-size: 30px;
-  background-color: transparent;
-  margin-top: 150px;
-  display: flex;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-@media (min-width: 576px) {
-  .title .title, .title .title, .main-services .title .title, .main-products .title .title, .main-services .main-products .title .title, .main-products .main-services .title .title, .main .title .title, .main-services .main .title .title, .main .main-services .title .title, .main-products .main .title .title, .main .main-products .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .title, .title .title, .title .title, .main-services .title .title, .main-products .title .title, .main-services .main-products .title .title, .main-products .main-services .title .title, .main .title .title, .main-services .main .title .title, .main .main-services .title .title, .main-products .main .title .title, .main .main-products .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .title, .title .main-services .title, .main-services .title .title, .title .main-services .title, .main-services .title .title, .main-services .title .title, .main-products .title .main-services .title, .main-services .main-products .title .title, .main-services .main-products .title .title, .main-products .main-services .title .title, .main .title .main-services .title, .main-services .main .title .title, .main-services .main .title .title, .main .main-services .title .title, .main-products .main .title .main-services .title, .main-services .main-products .main .title .title, .main .main-products .title .main-services .title, .main-services .main .main-products .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .title, .title .main-products .title, .main-products .title .title, .title .main-products .title, .main-products .title .title, .main-services .title .main-products .title, .main-products .main-services .title .title, .main-products .title .title, .main-services .main-products .title .title, .main-products .main-services .title .title, .main .title .main-products .title, .main-products .main .title .title, .main-services .main .title .main-products .title, .main-products .main-services .main .title .title, .main .main-services .title .main-products .title, .main-products .main .main-services .title .title, .main-products .main .title .title, .main .main-products .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .title, .title .main-services .main-products .title, .main-services .main-products .title .title, .title .main-services .main-products .title, .main-services .main-products .title .title, .main-services .title .main-products .title, .main-services .main-products .title .title, .main-services .main-products .title .title, .main-services .main-products .title .title, .main-products .main-services .title .main-products .title, .main-products .main-services .main-products .title .title, .main .title .main-services .main-products .title, .main-services .main-products .main .title .title, .main-services .main .title .main-products .title, .main-services .main-products .main .title .title, .main .main-services .title .main-products .title, .main .main-services .main-products .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .title, .main-services .main .main-products .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .title, .main-products .main-services .main .title .main-products .title, .main-products .main-services .main-products .main .title .title, .main .main-products .main-services .title .main-products .title, .main .main-products .main-services .main-products .title .title, .title .main-products .main-services .title, .main-products .main-services .title .title, .title .main-products .main-services .title, .main-products .main-services .title .title, .main-products .main-services .title .title, .main-products .title .main-services .title, .main-products .main-services .title .title, .main-services .main-products .title .main-services .title, .main-services .main-products .main-services .title .title, .main-products .main-services .title .title, .main .title .main-products .main-services .title, .main-products .main-services .main .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .title, .main-products .main .main-services .title .title, .main-products .main .title .main-services .title, .main-products .main-services .main .title .title, .main .main-products .title .main-services .title, .main .main-products .main-services .title .title, .main-services .main-products .main .title .main-services .title, .main-services .main-products .main-services .main .title .title, .main .main-services .main-products .title .main-services .title, .main .main-services .main-products .main-services .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .title, .title .main .title, .main .title .title, .title .main .title, .main .title .title, .main-services .title .main .title, .main .main-services .title .title, .main-products .title .main .title, .main .main-products .title .title, .main-services .main-products .title .main .title, .main .main-services .main-products .title .title, .main-products .main-services .title .main .title, .main .main-products .main-services .title .title, .main .title .title, .main-services .main .title .title, .main .main-services .title .title, .main-products .main .title .title, .main .main-products .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .title, .title .main-services .main .title, .main-services .main .title .title, .title .main-services .main .title, .main-services .main .title .title, .main-services .title .main .title, .main-services .main .title .title, .main-products .title .main-services .main .title, .main-services .main .main-products .title .title, .main-services .main-products .title .main .title, .main-services .main .main-products .title .title, .main-products .main-services .title .main .title, .main-products .main-services .main .title .title, .main-services .main .title .title, .main-services .main .title .title, .main .main-services .title .main .title, .main .main-services .main .title .title, .main-products .main-services .main .title .title, .main-services .main-products .main .title .title, .main-services .main .main-products .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .main .title, .main .main-services .main .main-products .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .main .title, .main .main-products .main-services .main .title .title, .title .main .main-services .title, .main .main-services .title .title, .title .main .main-services .title, .main .main-services .title .title, .main .main-services .title .title, .main-products .title .main .main-services .title, .main .main-services .main-products .title .title, .main .main-services .main-products .title .title, .main-products .main .main-services .title .title, .main .main-products .main-services .title .title, .main .title .main-services .title, .main .main-services .title .title, .main-services .main .title .main-services .title, .main-services .main .main-services .title .title, .main .main-services .title .title, .main-products .main .title .main-services .title, .main-products .main .main-services .title .title, .main .main-products .title .main-services .title, .main .main-services .main-products .title .title, .main-services .main-products .main .title .main-services .title, .main-services .main-products .main .main-services .title .title, .main .main-services .main-products .title .title, .main-products .main-services .main .title .main-services .title, .main-products .main-services .main .main-services .title .title, .main .main-products .main-services .title .title, .title .main-products .main .title, .main-products .main .title .title, .title .main-products .main .title, .main-products .main .title .title, .main-services .title .main-products .main .title, .main-products .main .main-services .title .title, .main-products .title .main .title, .main-products .main .title .title, .main-services .main-products .title .main .title, .main-services .main-products .main .title .title, .main-products .main-services .title .main .title, .main-products .main .main-services .title .title, .main-products .main .title .title, .main-services .main-products .main .title .title, .main-products .main-services .main .title .title, .main-products .main .main-services .title .title, .main-products .main .title .title, .main .main-products .title .main .title, .main .main-products .main .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .main .title, .main .main-services .main-products .main .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .main .title, .main .main-products .main .main-services .title .title, .title .main .main-products .title, .main .main-products .title .title, .title .main .main-products .title, .main .main-products .title .title, .main-services .title .main .main-products .title, .main .main-products .main-services .title .title, .main .main-products .title .title, .main-services .main .main-products .title .title, .main .main-services .main-products .title .title, .main .main-products .main-services .title .title, .main .title .main-products .title, .main .main-products .title .title, .main-services .main .title .main-products .title, .main-services .main .main-products .title .title, .main .main-services .title .main-products .title, .main .main-products .main-services .title .title, .main-products .main .title .main-products .title, .main-products .main .main-products .title .title, .main .main-products .title .title, .main-services .main-products .main .title .main-products .title, .main-services .main-products .main .main-products .title .title, .main .main-services .main-products .title .title, .main-products .main-services .main .title .main-products .title, .main-products .main-services .main .main-products .title .title, .main .main-products .main-services .title .title, .title .main-services .main-products .main .title, .main-services .main-products .main .title .title, .title .main-services .main-products .main .title, .main-services .main-products .main .title .title, .main-services .title .main-products .main .title, .main-services .main-products .main .title .title, .main-services .main-products .title .main .title, .main-services .main-products .main .title .title, .main-services .main-products .title .main .title, .main-services .main-products .main .title .title, .main-products .main-services .title .main-products .main .title, .main-products .main-services .main-products .main .title .title, .main-services .main-products .main .title .title, .main-services .main-products .main .title .title, .main .main-services .title .main-products .main .title, .main .main-services .main-products .main .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .main .title, .main-services .main .main-products .title .main .title, .main .main-services .main-products .main .title .title, .main-services .main .main-products .main .title .title, .main-services .main-products .main .title .title, .main .main-services .main-products .title .main .title, .main .main-services .main-products .main .title .title, .main-products .main-services .main-products .main .title .title, .main .main-products .main-services .title .main-products .main .title, .main .main-products .main-services .main-products .main .title .title, .title .main .main-services .main-products .title, .main .main-services .main-products .title .title, .title .main .main-services .main-products .title, .main .main-services .main-products .title .title, .main .main-services .title .main-products .title, .main .main-services .main-products .title .title, .main .main-services .main-products .title .title, .main .main-services .main-products .title .title, .main-products .main .main-services .title .main-products .title, .main .main-products .main-services .title .main-products .title, .main-products .main .main-services .main-products .title .title, .main .main-products .main-services .main-products .title .title, .main .title .main-services .main-products .title, .main .main-services .main-products .title .title, .main-services .main .title .main-services .main-products .title, .main-services .main .main-services .main-products .title .title, .main .main-services .title .main-products .title, .main .main-services .main-products .title .title, .main-products .main .title .main-services .main-products .title, .main-products .main .main-services .main-products .title .title, .main .main-services .main-products .title .title, .main .main-services .main-products .main .title .title, .main .main-services .main-products .title .title, .main-products .main-services .main .title .main-services .main-products .title, .main-products .main-services .main .main-services .main-products .title .title, .main .main-products .main-services .title .main-products .title, .main .main-products .main-services .main-products .title .title, .title .main-products .main-services .main .title, .main-products .main-services .main .title .title, .title .main-products .main-services .main .title, .main-products .main-services .main .title .title, .main-products .main-services .title .main .title, .main-products .main-services .main .title .title, .main-products .title .main-services .main .title, .main-products .main-services .main .title .title, .main-services .main-products .title .main-services .main .title, .main-services .main-products .main-services .main .title .title, .main-products .main-services .title .main .title, .main-products .main-services .main .title .title, .main-products .main-services .main .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .main .title, .main-products .main .main-services .title .main .title, .main .main-products .main-services .main .title .title, .main-products .main .main-services .main .title .title, .main-products .main-services .main .title .title, .main .main-products .title .main-services .main .title, .main .main-products .main-services .main .title .title, .main-services .main-products .main-services .main .title .title, .main .main-services .main-products .title .main-services .main .title, .main .main-services .main-products .main-services .main .title .title, .main-products .main-services .main .title .title, .main .main-products .main-services .title .main .title, .main .main-products .main-services .main .title .title, .title .main .main-products .main-services .title, .main .main-products .main-services .title .title, .title .main .main-products .main-services .title, .main .main-products .main-services .title .title, .main .main-products .main-services .title .title, .main .main-products .title .main-services .title, .main .main-products .main-services .title .title, .main-services .main .main-products .title .main-services .title, .main .main-services .main-products .title .main-services .title, .main-services .main .main-products .main-services .title .title, .main .main-services .main-products .main-services .title .title, .main .main-products .main-services .title .title, .main .title .main-products .main-services .title, .main .main-products .main-services .title .title, .main-services .main .title .main-products .main-services .title, .main-services .main .main-products .main-services .title .title, .main .main-products .main-services .title .title, .main-products .main .title .main-products .main-services .title, .main-products .main .main-products .main-services .title .title, .main .main-products .title .main-services .title, .main .main-products .main-services .title .title, .main-services .main-products .main .title .main-products .main-services .title, .main-services .main-products .main .main-products .main-services .title .title, .main .main-services .main-products .title .main-services .title, .main .main-services .main-products .main-services .title .title, .main .main-products .main-services .main .title .title, .main .main-products .main-services .title .title {
-    font-size: 38px;
-  }
 }
 
 .main {

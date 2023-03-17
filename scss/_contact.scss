@@ -1,7 +1,6 @@
 .main {
-    @extend.main;
     .title {
-        @extend .title;
+        @include title;
     }
     .contact {
         font-size: 18px;

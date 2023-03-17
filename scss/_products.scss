@@ -1,7 +1,6 @@
 .main-products {
-    @extend.main-products;
     .title {
-        @extend .title;
+        @include title;
     }
     .container-fluid {
         .row {
